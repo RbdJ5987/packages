@@ -22,3 +22,7 @@ if (any(installed_packages == FALSE)) {
 # Loading Packages  -------------------------------------------------------
 
 invisible(lapply(pckgs, library, character.only = TRUE))
+
+## Once completed clearing the workspace is possible: 
+
+rm(pckgs) # This removes the packages list from the environment. 
